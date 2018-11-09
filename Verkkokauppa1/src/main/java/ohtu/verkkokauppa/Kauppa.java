@@ -5,7 +5,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Kauppa {    
 
     private Sailo varasto;
@@ -14,7 +13,6 @@ public class Kauppa {
     private Generaattori viitegeneraattori;
     private String kaupanTili;
 
-    @Autowired
     public Kauppa(Sailo varasto, Rahasailo pankki, Generaattori g) {
         this.varasto = varasto;
         this.pankki = pankki;

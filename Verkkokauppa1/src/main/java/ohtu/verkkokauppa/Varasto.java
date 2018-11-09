@@ -4,14 +4,12 @@ import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Varasto implements Sailo {
 
         
     private TapahtumaKirja kirjanpito;
     private HashMap<Tuote, Integer> saldot;  
     
-    @Autowired
     public Varasto(Kirjanpito kirjanpito) {
         this.kirjanpito = kirjanpito;
         saldot = new HashMap<Tuote, Integer>();
